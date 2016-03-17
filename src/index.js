@@ -14,6 +14,7 @@ const entry = document.querySelectorAll(`.entry`);
 const nav = document.createElement(`nav`);
 nav.classList.add(`hover`);
 bodyEl.appendChild(nav);
+const navIcon = document.createElement(`div`);
 
 for (let i = 0; i < entry.length; i++) {
   // Setup and looking up elements for the current article

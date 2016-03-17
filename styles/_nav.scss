@@ -3,7 +3,7 @@ nav {
   right: -26rem;
   bottom: 10rem;
   width: 30rem;
-  padding: 2rem;
+  padding: 1rem;
   background: $brand-gray;
 
   &:hover {
@@ -15,5 +15,6 @@ nav {
 .nav-item {
   display: flex;
   justify-content: flex-end;
+  padding: 0.4rem;
   text-align: center;
 }
