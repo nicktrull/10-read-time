@@ -12,6 +12,7 @@
 const bodyEl = document.querySelector(`body`);
 const entry = document.querySelectorAll(`.entry`);
 const nav = document.createElement(`nav`);
+nav.classList.add(`hover`);
 bodyEl.appendChild(nav);
 
 for (let i = 0; i < entry.length; i++) {
@@ -29,6 +30,7 @@ for (let i = 0; i < entry.length; i++) {
 
   // Add link for current entry to the nav
   const link = document.createElement(`a`);
+  link.classList.add(`nav-item`);
   nav.appendChild(link);
   link.setAttribute(`href`, `#${singleEntry.id}`);
   link.innerText = title.innerText;

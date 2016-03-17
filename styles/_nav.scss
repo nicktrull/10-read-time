@@ -1,0 +1,19 @@
+nav {
+  position: fixed;
+  right: -26rem;
+  bottom: 10rem;
+  width: 30rem;
+  padding: 2rem;
+  background: $brand-gray;
+
+  &:hover {
+    transition: right .5s ease;
+    right: 0;
+  }
+}
+
+.nav-item {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+}
