@@ -1,20 +1,31 @@
 nav {
+  display: flex;
   position: fixed;
-  right: -26rem;
+  right: -46rem;
   bottom: 10rem;
-  width: 30rem;
+  justify-content: space-between;
+  width: 50rem;
   padding: 1rem;
+  transition: right 0.3s ease;
   background: $brand-gray;
 
   &:hover {
-    transition: right .5s ease;
     right: 0;
+    transition: right 0.3s ease;
   }
 }
 
+.nav-icon {
+  color: $brand-highlight;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+.nav-links {
+
+}
+
 .nav-item {
-  display: flex;
-  justify-content: flex-end;
+  display: block;
   padding: 0.4rem;
-  text-align: center;
 }

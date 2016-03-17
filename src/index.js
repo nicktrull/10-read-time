@@ -11,10 +11,17 @@
 // }
 const bodyEl = document.querySelector(`body`);
 const entry = document.querySelectorAll(`.entry`);
-const nav = document.createElement(`nav`);
-nav.classList.add(`hover`);
+
+const nav = document.createElement(`nav`);// create nav
+nav.classList.add(`nav`);
 bodyEl.appendChild(nav);
-const navIcon = document.createElement(`div`);
+const navIcon = document.createElement(`div`);// create navIcon div
+navIcon.classList.add(`nav-icon`);
+nav.appendChild(navIcon);
+navIcon.innerText = `<`;
+const navLinks = document.createElement(`div`);
+navLinks.classList.add(`nav-links`);
+nav.appendChild(navLinks);
 
 for (let i = 0; i < entry.length; i++) {
   // Setup and looking up elements for the current article
@@ -32,7 +39,7 @@ for (let i = 0; i < entry.length; i++) {
   // Add link for current entry to the nav
   const link = document.createElement(`a`);
   link.classList.add(`nav-item`);
-  nav.appendChild(link);
+  navLinks.appendChild(link);
   link.setAttribute(`href`, `#${singleEntry.id}`);
   link.innerText = title.innerText;
 }
